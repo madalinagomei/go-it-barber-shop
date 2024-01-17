@@ -1,35 +1,188 @@
 :root {
     --brand-color: #ff6c00;
+    --black-color: #303030;
+    --white-color: #ffffff;
+    --gray-color: rgba(157, 164, 189, 0.6);
+
+    --content-color: #555;
+
+    --text-font-family: "Open Sans", sans-serif;
+    --header-font-family: "Raleway", sans-serif;
 }
+
+/* Global styles */
+body {
+    font-family: var(--text-font-family);
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* Classes */
 
 .social-media-link {
-    color: #303030;
+    color: var(--black-color);
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 2.2px;
 }
 
-.social-media-link:hover {
+.social-media-link:hover,
+.social-media-link:focus {
     color: var(--brand-color);
 }
 
 .hero-content {
     /* TODO: replace with image background */
-    background-color: #303030;
-    color: #ffffff;
-}
-
-.nav-about {
-    color: var(--brand-color);
+    background-color: var(--black-color);
+    color: var(--white-color);
 }
 
 .nav-link {
-    color: #ffffff;
+    color: var(--white-color);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.2px;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: var(--brand-color);
 }
 
 .address-phone-number {
-    color: #ffffff;
+    color: var(--white-color);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+}
+
+.address-phone-number:hover,
+.address-phone-number:focus {
+    color: var(--brand-color);
 }
 
 .book-service-button {
-    background-color: rgba(0, 0, 0, 0);
-    color: #ffffff;
+    background: none;
     border-color: var(--brand-color);
+
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.08px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.book-service-button-light {
+    color: var(--white-color);
+}
+
+.book-service-button-dark {
+    color: var(--black-color);
+}
+
+.book-service-button:hover,
+.book-service-button:focus {
+    color: var(--brand-color);
+}
+
+.subtitle {
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.1px;
+    text-transform: uppercase;
+}
+
+.subtitle-dark {
+    color: var(--black-color);
+}
+
+.subtitle-light {
+    color: var(--subtitle-gray-color);
+}
+
+.hero-header {
+    color: var(--white-color);
+    font-family: var(--header-font-family);
+    font-size: 72px;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 3.6px;
+}
+
+.header {
+    font-family: var(--header-font-family);
+    font-size: 42px;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 2.1px;
+}
+
+.header-dark {
+    color: var(--black-color);
+}
+
+.header-light {
+    color: var(--white-color);
+}
+
+.hero-control-buttons {
+    background: none;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.1px;
+
+    cursor: pointer;
+}
+
+.hero-control-buttons-dark {
+    color: var(--gray-color);
+}
+
+.hero-control-buttons-light {
+    color: var(--white-color);
+}
+
+.about-content-1 {
+    color: var(--content-color);
+    font-size: 18px;
+    line-height: 166.667%;
+    letter-spacing: 0.36px;
+}
+
+.about-content-2 {
+    color: var(--content-color);
+    font-size: 14px;
+    line-height: 185.714%;
+    letter-spacing: 0.28px;
+}
+
+.services-and-prices {
+    /* TODO: replace with image background */
+    background-color: var(--black-color);
+    color: var(--white-color);
+}
+
+.contact {
+    /* TODO: replace with image background */
+    background-color: var(--black-color);
+    color: var(--white-color);
 }

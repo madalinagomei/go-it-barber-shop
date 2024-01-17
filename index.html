@@ -6,6 +6,13 @@
     <meta name="description" content="The Best Barbershop in Your City" />
     <meta name="keywords" content="Barbershop, Hair, Beard, Haircuts" />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="./css/style.css" />
     <title>BarberShop</title>
   </head>
@@ -49,7 +56,9 @@
         <header>
           <nav>
             <ul>
-              <li><a class="nav-about" href="#about">About</a></li>
+              <li>
+                <a class="nav-link" href="#about">About</a>
+              </li>
               <li>
                 <a class="nav-link" href="#prices">Services and Prices</a>
               </li>
@@ -62,7 +71,10 @@
                   >+38 044 111 11 11</a
                 >
               </address>
-              <button class="book-service-button" type="button">
+              <button
+                class="book-service-button book-service-button-light"
+                type="button"
+              >
                 book a Service
               </button>
             </div>
@@ -72,9 +84,11 @@
         <section>
           <div>
             <img src="./images/divider.svg" alt="-" />
-            <h3>A hair salon for men in Kyiv</h3>
+            <h3 class="subtitle subtitle-light">
+              A hair salon for men in Kyiv
+            </h3>
           </div>
-          <h1>BarberShop</h1>
+          <h1 class="hero-header">BarberShop</h1>
           <p>
             We are experts in trendy men's haircuts. <br />
             We work quickly, carefully, and tastefully.
@@ -82,8 +96,18 @@
         </section>
         <!-- Control buttons -->
         <div>
-          <button type="button">Back</button>
-          <button type="button">Next</button>
+          <button
+            class="hero-control-buttons hero-control-buttons-dark"
+            type="button"
+          >
+            Back
+          </button>
+          <button
+            class="hero-control-buttons hero-control-buttons-light"
+            type="button"
+          >
+            Next
+          </button>
         </div>
       </div>
     </section>
@@ -110,32 +134,39 @@
         <div>
           <div>
             <img src="./images/divider.svg" alt="-" />
-            <h3>About</h3>
+            <h3 class="subtitle subtitle-dark">About</h3>
           </div>
-          <h2>The Best Barbershop in Your City</h2>
-          <p>
+          <h2 class="header header-dark">The Best Barbershop in Your City</h2>
+          <p class="about-content-1">
             If you want to add more confidence to your image, you are definitely
             in the right place.
           </p>
-          <p>
+          <p class="about-content-2">
             We are a team that never rests on its laurels and yearns for change.
             And once you fall into the hands of our master, you will never be
             the same again. We are a team that is always on the same wavelength
             with clients. Therefore, we are always ready to improve everyone who
             comes to us!
           </p>
-          <button type="button">book a service</button>
+          <button
+            class="book-service-button book-service-button-dark"
+            type="button"
+          >
+            book a service
+          </button>
         </div>
       </section>
 
       <!-- Services and prices section -->
-      <section id="prices">
+      <section id="prices" class="services-and-prices">
         <!-- Subtitle -->
         <div>
           <img src="./images/divider.svg" alt="-" />
-          <h3>Spend time in the company of the best craftsmen</h3>
+          <h3 class="subtitle subtitle-light">
+            Spend time in the company of the best craftsmen
+          </h3>
         </div>
-        <h2>Services and Prices</h2>
+        <h2 class="header header-light">Services and Prices</h2>
         <!-- Prices lists -->
         <div>
           <ul>
@@ -176,7 +207,12 @@
           </ul>
         </div>
 
-        <button type="button">book a Service</button>
+        <button
+          class="book-service-button book-service-button-light"
+          type="button"
+        >
+          book a Service
+        </button>
       </section>
 
       <!-- Why us section -->
@@ -203,9 +239,9 @@
           <!-- Subtitle -->
           <div>
             <img src="./images/divider.svg" alt="-" />
-            <h3>Old school</h3>
+            <h3 class="subtitle subtitle-dark">Old school</h3>
           </div>
-          <h2>Why do they come to us?</h2>
+          <h2 class="header header-dark">Why do they come to us?</h2>
           <p>
             Only good things are said about us. But it is better to see and feel
             1 time than to read 10 times.
@@ -218,9 +254,11 @@
         <!-- Subtitle -->
         <div>
           <img src="./images/divider.svg" alt="-" />
-          <h3>for true connoisseurs of the atmosphere</h3>
+          <h3 class="subtitle subtitle-dark">
+            for true connoisseurs of the atmosphere
+          </h3>
         </div>
-        <h2>Our Barbers</h2>
+        <h2 class="header header-dark">Our Barbers</h2>
         <ul>
           <li>
             <img
@@ -260,7 +298,9 @@
         <!-- Subtitle -->
         <div>
           <img src="./images/divider.svg" alt="-" />
-          <h3>In Latin, &quot;barba&quot; means &quot;beard&quot;</h3>
+          <h3 class="subtitle subtitle-dark">
+            In Latin, &quot;barba&quot; means &quot;beard&quot;
+          </h3>
         </div>
         <ul>
           <li><img src="images/portofolio1.jpg" alt="Barber cuts hair" /></li>
@@ -271,8 +311,8 @@
       </section>
 
       <!-- Contacts -->
-      <section id="contacts">
-        <h2>Contacts</h2>
+      <section id="contacts" class="contact">
+        <h2 class="header header-light">Contacts</h2>
         <address>
           <span>Main Street, 7A Kyiv, 08132</span> <br />
           <a href="tel:+380441111111">+38 044 111 11 11</a><br />
@@ -281,7 +321,7 @@
         <div>
           <div>
             <img src="images/divider.svg" alt="-" />
-            <h3>working hours</h3>
+            <h3 class="subtitle subtitle-light">working hours</h3>
           </div>
           <p>
             Daily from <time datetime="9:00AM">9:00 AM</time> till
@@ -298,12 +338,20 @@
         <img src="images/divider.svg" alt="-" />
         <ul>
           <li>
-            <a href="https://youtube.com" target="_blank" rel="noopener"
+            <a
+              class="social-media-link"
+              href="https://youtube.com"
+              target="_blank"
+              rel="noopener"
               >Youtube</a
             >
           </li>
           <li>
-            <a href="https://instagram.com" target="_blank" rel="noopener"
+            <a
+              class="social-media-link"
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener"
               >Instagram</a
             >
           </li>

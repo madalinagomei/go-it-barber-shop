@@ -6,6 +6,14 @@
     <meta name="description" content="The Best Barbershop in Your City" />
     <meta name="keywords" content="Barbershop, Hair, Beard, Haircuts" />
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,17 +26,17 @@
   </head>
   <body>
     <!-- Hero section -->
-    <section>
+    <section class="hero">
       <!-- Sidebar -->
-      <div>
+      <div class="hero-sidebar">
         <!-- Logo -->
         <a href="index.html">
           <img src="images/logo.svg" alt="Logo" />
         </a>
         <!-- Social media links -->
         <div>
-          <ul>
-            <li>
+          <ul class="hero-social-media">
+            <li class="hero-social-media-element">
               <a
                 class="social-media-link"
                 href="https://youtube.com"
@@ -37,7 +45,7 @@
                 >Youtube</a
               >
             </li>
-            <li>
+            <li class="hero-social-media-element">
               <a
                 class="social-media-link"
                 href="https://instagram.com"
@@ -47,15 +55,15 @@
               >
             </li>
           </ul>
-          <img src="images/hero-social-media-divider.svg" alt="|" />
+          <img src="images/divider.svg" alt="-" />
         </div>
       </div>
-      <!-- Hero content -->
-      <div class="hero-content">
+      <!-- Hero container -->
+      <div class="hero-container">
         <!-- Header -->
-        <header>
-          <nav>
-            <ul>
+        <header class="hero-header">
+          <nav class="hero-navbar">
+            <ul class="hero-navbar-list">
               <li>
                 <a class="nav-link" href="#about">About</a>
               </li>
@@ -65,45 +73,45 @@
               <li><a class="nav-link" href="#barbers">Barbers</a></li>
               <li><a class="nav-link" href="#contacts">Contacts</a></li>
             </ul>
-            <div>
-              <address>
-                <a class="address-phone-number" href="tel:+380441111111"
-                  >+38 044 111 11 11</a
-                >
-              </address>
-              <button
-                class="book-service-button book-service-button-light"
-                type="button"
-              >
-                book a Service
-              </button>
-            </div>
           </nav>
+          <div class="hero-header-cta">
+            <address class="hero-header-address">
+              <a class="address-phone-number" href="tel:+380441111111"
+                >+38 044 111 11 11</a
+              >
+            </address>
+            <button
+              class="book-service-button book-service-button-light"
+              type="button"
+            >
+              book a Service
+            </button>
+          </div>
         </header>
         <!-- Title -->
-        <section>
-          <div>
+        <section class="hero-content">
+          <div class="subtitle-container">
             <img src="./images/divider.svg" alt="-" />
             <h3 class="subtitle subtitle-light">
               A hair salon for men in Kyiv
             </h3>
           </div>
-          <h1 class="hero-header">BarberShop</h1>
-          <p>
+          <h1 class="hero-title">BarberShop</h1>
+          <p class="hero-description">
             We are experts in trendy men's haircuts. <br />
             We work quickly, carefully, and tastefully.
           </p>
         </section>
         <!-- Control buttons -->
-        <div>
+        <div class="hero-control-buttons">
           <button
-            class="hero-control-buttons hero-control-buttons-dark"
+            class="hero-control-button hero-control-button-dark"
             type="button"
           >
             Back
           </button>
           <button
-            class="hero-control-buttons hero-control-buttons-light"
+            class="hero-control-button hero-control-button-light"
             type="button"
           >
             Next
@@ -132,7 +140,7 @@
         </div>
         <!-- About content -->
         <div>
-          <div>
+          <div class="subtitle-container">
             <img src="./images/divider.svg" alt="-" />
             <h3 class="subtitle subtitle-dark">About</h3>
           </div>
@@ -160,7 +168,7 @@
       <!-- Services and prices section -->
       <section id="prices" class="services-and-prices">
         <!-- Subtitle -->
-        <div>
+        <div class="subtitle-container">
           <img src="./images/divider.svg" alt="-" />
           <h3 class="subtitle subtitle-light">
             Spend time in the company of the best craftsmen
@@ -217,27 +225,27 @@
 
       <!-- Why us section -->
       <section>
-        <ul>
-          <li>
+        <ul class="why-us-cards">
+          <li class="why-us-card">
             <h3>600<sup>+</sup></h3>
             <p>Satisfied Customers per Day</p>
           </li>
-          <li>
+          <li class="why-us-card why-us-card-shifted">
             <h3>50<sup>+</sup></h3>
             <p>Excellent Service Awards</p>
           </li>
-          <li>
+          <li class="why-us-card">
             <h3>20<sup>+</sup></h3>
             <p>The Best Barbers of Kyiv</p>
           </li>
-          <li>
+          <li class="why-us-card why-us-card-shifted">
             <h3>100<sup>+</sup></h3>
             <p>Gifts for Regular Customers</p>
           </li>
         </ul>
         <div>
           <!-- Subtitle -->
-          <div>
+          <div class="subtitle-container">
             <img src="./images/divider.svg" alt="-" />
             <h3 class="subtitle subtitle-dark">Old school</h3>
           </div>
@@ -252,7 +260,7 @@
       <!-- Our barbers section -->
       <section id="barbers">
         <!-- Subtitle -->
-        <div>
+        <div class="subtitle-container">
           <img src="./images/divider.svg" alt="-" />
           <h3 class="subtitle subtitle-dark">
             for true connoisseurs of the atmosphere
@@ -296,7 +304,7 @@
       <!-- Portofolio section -->
       <section>
         <!-- Subtitle -->
-        <div>
+        <div class="subtitle-container">
           <img src="./images/divider.svg" alt="-" />
           <h3 class="subtitle subtitle-dark">
             In Latin, &quot;barba&quot; means &quot;beard&quot;

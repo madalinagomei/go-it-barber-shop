@@ -1,0 +1,25 @@
+.barbers {
+    background-color: #f7f7f7;
+}
+
+.barbers-social-media-list {
+    display: flex;
+    gap: 10px;
+    fill: var(--black-color);
+}
+
+.barbers-social-media-icon {
+    background-color: white;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.barbers-social-media-icon:hover,
+.barbers-social-media-icon:active {
+    fill: var(--brand-color);
+}

@@ -1,0 +1,58 @@
+.services-and-prices {
+    --price-list-bg-color: rgba(17, 19, 25, 0.85);
+
+    background-image: linear-gradient(var(--price-list-bg-color),
+            var(--price-list-bg-color)),
+        url("../images/services-and-prices.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--white-color);
+    height: 718px;
+    padding: 130px 55px;
+}
+
+.services-header {
+    margin-top: 20px;
+    margin-bottom: 46px;
+}
+
+.services-price-lists {
+    display: flex;
+    color: #9da4bd;
+
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 166.667%;
+    letter-spacing: 0.36px;
+}
+
+.services-price-list {
+    flex-grow: 1;
+    padding: 30px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.services-price-list-light {
+    background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+}
+
+.services-price-list-dark {
+    background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+}
+
+.services-price-list-item {
+    display: flex;
+}
+
+.services-price-list-divider {
+    flex-grow: 1;
+    border-bottom: 1px solid rgba(157, 164, 189, 0.12);
+}
+
+.services-book-button {
+    display: block;
+    margin: auto;
+    margin-top: 48px;
+}

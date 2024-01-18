@@ -1,0 +1,32 @@
+.about {
+    height: 705px;
+    padding: 130px 55px;
+    display: flex;
+    gap: 30px;
+}
+
+.about-content {
+    margin-left: calc(64px - 30px);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about-description-1 {
+    color: var(--content-color);
+    font-size: 18px;
+    line-height: 166.667%;
+    letter-spacing: 0.36px;
+}
+
+.about-description-2 {
+    color: var(--content-color);
+    font-size: 14px;
+    line-height: 185.714%;
+    letter-spacing: 0.28px;
+}
+
+.about-book-service-button {
+    align-self: flex-start;
+    margin-top: calc(40px - 20px);
+}

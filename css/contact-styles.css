@@ -1,0 +1,16 @@
+.contact {
+    /* TODO: replace with image background */
+    background-color: var(--black-color);
+    color: var(--white-color);
+    height: 644px;
+}
+
+.contact-address {
+    color: #9da4bd;
+
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 166.667%;
+    letter-spacing: 0.36px;
+}

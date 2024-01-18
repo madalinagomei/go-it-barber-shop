@@ -37,108 +37,17 @@ ul {
 
 /* Classes */
 
-.hero {
-    width: 100%;
-    height: 680px;
-    display: flex;
+.container {
+    width: 1280px;
+    margin: auto;
 }
 
-.hero-sidebar {
-    width: 155px;
-    padding: 32px 32px 40px 55px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.divider-light {
+    fill: var(--gray-color);
 }
 
-.hero-social-media {
-    margin-bottom: 40px;
-}
-
-.hero-control-buttons {
-    display: flex;
-    justify-content: flex-end;
-    gap: 26px;
-}
-
-.hero-control-button {
-    background: none;
-    font-size: 11px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    letter-spacing: 1.1px;
-
-    cursor: pointer;
-}
-
-.hero-control-button-dark {
-    color: var(--gray-color);
-}
-
-.hero-control-button-light {
-    color: var(--white-color);
-}
-
-.hero-social-media-element:first-child {
-    margin-bottom: 40px;
-}
-
-.hero-container {
-    /* TODO: replace with image background */
-    background-color: var(--black-color);
-    color: var(--white-color);
-    flex-grow: 1;
-    padding: 40px 55px 40px 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.hero-navbar {
-    display: flex;
-    align-items: center;
-}
-
-.hero-navbar-list {
-    display: flex;
-    gap: 40px;
-}
-
-.hero-header-cta {
-    display: flex;
-    gap: 40px;
-}
-
-.hero-header-address {
-    display: flex;
-    align-items: center;
-}
-
-.hero-header {
-    display: flex;
-    justify-content: space-between;
-}
-
-.hero-content> :nth-child(n + 2) {
-    margin-top: 20px;
-}
-
-.hero-title {
-    color: var(--white-color);
-    font-family: var(--header-font-family);
-    font-size: 72px;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: 3.6px;
-}
-
-.hero-description {
-    color: #9da4bd;
-    font-size: 18px;
-    font-style: normal;
-    line-height: 166.667%;
-    letter-spacing: 0.36px;
+.divider-dark {
+    fill: var(--black-color);
 }
 
 .social-media-link {
@@ -216,6 +125,7 @@ ul {
 .subtitle-container {
     display: flex;
     gap: 20px;
+    align-items: center;
 }
 
 .subtitle {
@@ -251,26 +161,6 @@ ul {
     color: var(--white-color);
 }
 
-.about-content-1 {
-    color: var(--content-color);
-    font-size: 18px;
-    line-height: 166.667%;
-    letter-spacing: 0.36px;
-}
-
-.about-content-2 {
-    color: var(--content-color);
-    font-size: 14px;
-    line-height: 185.714%;
-    letter-spacing: 0.28px;
-}
-
-.services-and-prices {
-    /* TODO: replace with image background */
-    background-color: var(--black-color);
-    color: var(--white-color);
-}
-
 .why-us-cards {
     --card-width: 170px;
     display: flex;
@@ -289,10 +179,4 @@ ul {
 
 .why-us-card-shifted {
     margin-top: 30px;
-}
-
-.contact {
-    /* TODO: replace with image background */
-    background-color: var(--black-color);
-    color: var(--white-color);
 }

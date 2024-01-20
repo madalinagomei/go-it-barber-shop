@@ -1,11 +1,21 @@
 .barbers {
     background-color: #f7f7f7;
+    height: 890px;
+    padding: 130px 55px;
+}
+
+.barbers-header {
+    margin-top: 20px;
+    margin-bottom: 44px;
 }
 
 .barbers-social-media-list {
     display: flex;
     gap: 10px;
     fill: var(--black-color);
+    margin: auto;
+    width: fit-content;
+    margin: 30px auto 0px auto;
 }
 
 .barbers-social-media-icon {
@@ -22,4 +32,35 @@
 .barbers-social-media-icon:hover,
 .barbers-social-media-icon:active {
     fill: var(--brand-color);
+}
+
+.barbers-list {
+    display: flex;
+    gap: 30px;
+}
+
+.barbers-list-item {}
+
+.barbers-list-item-title {
+    color: var(--black-color);
+
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.36px;
+
+    margin-top: 30px;
+}
+
+.barbers-list-item-description {
+    color: var(--brand-color);
+
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.28px;
+
+    margin-top: 8px;
 }

@@ -1,11 +1,51 @@
+.contact-container {
+    display: flex;
+}
+
+.contact-book-service {
+    background-color: #191c26;
+    width: 55%;
+}
+
 .contact {
-    /* TODO: replace with image background */
-    background-color: var(--black-color);
+    width: 45%;
+    --price-list-bg-color: rgba(25, 28, 38, 0.9);
+
+    background-image: linear-gradient(var(--price-list-bg-color),
+            var(--price-list-bg-color)),
+        url("../images/contact.jfif");
+    background-repeat: no-repeat;
+    background-size: cover;
     color: var(--white-color);
     height: 644px;
+
+    padding: 130px 100px;
 }
 
 .contact-address {
+    color: #9da4bd;
+
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 166.667%;
+    letter-spacing: 0.36px;
+
+    display: flex;
+    align-items: center;
+}
+
+.contact-address-email {
+    text-decoration: underline;
+}
+
+.contact-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 16px;
+}
+
+.contact-working-hours {
     color: #9da4bd;
 
     font-size: 18px;

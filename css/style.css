@@ -22,6 +22,10 @@
     margin: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: var(--text-font-family);
 }
@@ -36,6 +40,18 @@ ul {
 }
 
 /* Classes */
+.modal {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    z-index: 10;
+    position: fixed;
+}
+
+.is-hidden {
+    visibility: hidden;
+}
 
 .container {
     width: 1280px;
@@ -159,24 +175,4 @@ ul {
 
 .header-light {
     color: var(--white-color);
-}
-
-.why-us-cards {
-    --card-width: 170px;
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 30px;
-
-    max-width: calc(var(--card-width) * 2 + 30px);
-}
-
-.why-us-card {
-    flex-basis: var(--card-width);
-    height: 133px;
-
-    background-color: #f7f7f7;
-}
-
-.why-us-card-shifted {
-    margin-top: 30px;
 }

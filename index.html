@@ -478,7 +478,40 @@
 
         <div class="contact-container">
           <!-- Book Service -->
-          <section class="contact-book-service"></section>
+          <section class="contact-book-service">
+            <h2 class="header header-light">Book a Service</h2>
+            <form action="" autocomplete="off" class="contact-form">
+              <div class="contact-form-input-group">
+                <input
+                  type="text"
+                  placeholder="Name*"
+                  required
+                  name="name"
+                  class="contact-form-elem"
+                />
+                <input
+                  type="tel"
+                  placeholder="Telephone*"
+                  required
+                  name="telephone"
+                  class="contact-form-elem"
+                />
+              </div>
+
+              <textarea
+                name="message"
+                rows="4"
+                placeholder="Message"
+                class="contact-form-elem contact-form-elem-textarea"
+              ></textarea>
+              <button
+                class="book-service-button book-service-button-light"
+                type="submit"
+              >
+                send
+              </button>
+            </form>
+          </section>
 
           <!-- Contacts -->
           <section id="contacts" class="contact">
@@ -519,12 +552,12 @@
 
       <!-- Footer -->
       <footer class="footer">
-        <p>&copy; Copyright 2022</p>
-        <div>
+        <p class="footer-copy">&copy; Copyright 2022</p>
+        <div class="footer-social-container">
           <svg width="60" height="1" class="divider-dark">
             <use href="./images/icons.svg#icon-divider" />
           </svg>
-          <ul>
+          <ul class="footer-social">
             <li>
               <a
                 class="social-media-link c"

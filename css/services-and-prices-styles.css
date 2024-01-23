@@ -7,8 +7,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     color: var(--white-color);
-    height: 718px;
-    padding: 130px 55px;
+
+    padding: var(--padding-vertical-global) var(--padding-horizontal-global);
 }
 
 .services-header {
@@ -17,29 +17,29 @@
 }
 
 .services-price-lists {
-    display: flex;
+    background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+
     color: #9da4bd;
 
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 400;
-    line-height: 166.667%;
-    letter-spacing: 0.36px;
+    line-height: 214.286%;
+    letter-spacing: 0.28px;
 }
 
 .services-price-list {
     flex-grow: 1;
-    padding: 30px 40px;
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.services-price-list-light {
-    background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+.services-price-list-1 {
+    padding: 30px 40px 20px 40px;
 }
 
-.services-price-list-dark {
-    background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+.services-price-list-2 {
+    padding: 0 40px 30px 40px;
 }
 
 .services-price-list-item {
@@ -55,4 +55,30 @@
     display: block;
     margin: auto;
     margin-top: 48px;
+}
+
+@media screen and (width >=768px) {
+    .services-price-lists {
+        font-size: 18px;
+        line-height: 166.667%;
+        letter-spacing: 0.36px;
+    }
+}
+
+@media screen and (width >=1158px) {
+    .services-price-lists {
+        display: flex;
+    }
+
+    .services-price-list {
+        padding: 30px 40px;
+    }
+
+    .services-price-list-1 {
+        background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+    }
+
+    .services-price-list-2 {
+        background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+    }
 }

@@ -32,7 +32,82 @@
 }
 
 .why-us-card-title {
-    color: var(--black-color);
+    .why-us {
+            padding: var(--padding-vertical-global) var(--padding-horizontal-global);
+            display: flex;
+            flex-direction: column-reverse;
+            gap: 44px;
+        }
+    
+        .why-us-title-container {
+            max-width: 420px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+    
+        .why-us-cards {
+            --card-width: 170px;
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: 30px;
+            margin-left: auto;
+    
+            max-width: calc(var(--card-width) * 2 + 30px);
+        }
+    
+        .why-us-card {
+            flex-basis: var(--card-width);
+            height: 133px;
+    
+            background-color: #f7f7f7;
+    
+            padding: 20px 24px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        .why-us-card-shifted {
+            margin-top: 30px;
+        }
+    
+        .why-us-card-title {
+            color: var(--black-color);
+    
+            text-align: center;
+            font-size: 42px;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: 2.1px;
+        }
+    
+        .why-us-card-title>sup {
+            color: var(--brand-color);
+            /* TODO: make it smaller */
+        }
+    
+        .why-us-card-description {
+            color: var(--black-color);
+    
+            text-align: center;
+            font-size: 11px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+        }
+    
+        @media screen and (width >=1158px) {
+            .why-us {
+                flex-direction: row;
+                justify-content: space-evenly;
+            }
+    
+            .why-us-cards {
+                margin-left: 0;
+            }
+        }color: var(--black-color);
 
     text-align: center;
     font-size: 42px;

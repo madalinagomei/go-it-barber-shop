@@ -1,7 +1,9 @@
 .footer {
+    --padding-vertical: 44px;
     display: flex;
-    justify-content: space-between;
-    padding: 55px;
+    flex-wrap: wrap-reverse;
+    gap: 20px;
+    padding: var(--padding-vertical) var(--padding-horizontal-global);
 }
 
 .footer-copy {
@@ -18,9 +20,18 @@
     display: flex;
     align-items: center;
     gap: 40px;
+    margin-left: auto;
 }
 
 .footer-social {
     display: flex;
     gap: 40px;
 }
+
+@media screen and (width >=768px) {
+    .footer {
+        --padding-vertical: 56px;
+    }
+}
+
+@media screen and (width >=1158px) {}

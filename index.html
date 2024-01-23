@@ -104,31 +104,48 @@
           <div class="hero-content-container">
             <!-- Header -->
             <header class="hero-header">
-              <nav class="hero-navbar">
-                <ul class="hero-navbar-list">
-                  <li>
-                    <a class="nav-link" href="#about">About</a>
-                  </li>
-                  <li>
-                    <a class="nav-link" href="#prices">Services and Prices</a>
-                  </li>
-                  <li><a class="nav-link" href="#barbers">Barbers</a></li>
-                  <li><a class="nav-link" href="#contacts">Contacts</a></li>
-                </ul>
-              </nav>
-              <div class="hero-header-cta">
-                <address class="hero-header-address">
-                  <a class="address-phone-number" href="tel:+380441111111"
-                    >+38 044 111 11 11</a
-                  >
-                </address>
-                <button
-                  class="book-service-button book-service-button-light"
-                  type="button"
-                  data-modal-open
-                >
-                  book a Service
+              <a href="index.html" class="hero-phone-logo">
+                <svg width="69" height="56">
+                  <use href="./images/icons.svg#icon-logo" />
+                </svg>
+              </a>
+
+              <button
+                class="hero-navbar-menu-button hero-navbar-menu-button-light"
+                data-menu-open
+              >
+                <i data-feather="menu"></i>
+              </button>
+              <div class="hero-navbar-menu" data-menu>
+                <button class="hero-navbar-menu-button" data-menu-close>
+                  <i data-feather="x"></i>
                 </button>
+                <nav class="hero-navbar">
+                  <ul class="hero-navbar-list">
+                    <li>
+                      <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li>
+                      <a class="nav-link" href="#prices">Services and Prices</a>
+                    </li>
+                    <li><a class="nav-link" href="#barbers">Barbers</a></li>
+                    <li><a class="nav-link" href="#contacts">Contacts</a></li>
+                  </ul>
+                </nav>
+                <div class="hero-header-cta">
+                  <address class="hero-header-address">
+                    <a class="address-phone-number" href="tel:+380441111111"
+                      >+38 044 111 11 11</a
+                    >
+                  </address>
+                  <button
+                    class="book-service-button hero-book-service-button"
+                    type="button"
+                    data-modal-open
+                  >
+                    book a Service
+                  </button>
+                </div>
               </div>
             </header>
             <!-- Title -->
@@ -172,18 +189,26 @@
         <!-- About section -->
         <section id="about" class="about">
           <!-- About images -->
-          <img
-            src="./images/about-img-1.jpg"
-            alt="Barber trims beard"
-            width="270"
-            height="445"
-          />
-          <img
-            src="./images/about-img-2.jpg"
-            alt="Barber cuts hair"
-            width="270"
-            height="445"
-          />
+          <div class="about-images-container">
+            <img
+              srcset="
+                ./images/about-img-1.jpg    1x,
+                ./images/about-img-1@2x.jpg 2x
+              "
+              src="./images/about-img-1.jpg"
+              alt="Barber trims beard"
+              class="about-image"
+            />
+            <img
+              srcset="
+                ./images/about-img-2.jpg    1x,
+                ./images/about-img-2@2x.jpg 2x
+              "
+              src="./images/about-img-2.jpg"
+              alt="Barber cuts hair"
+              class="about-image"
+            />
+          </div>
           <!-- About content -->
           <div class="about-content">
             <div class="subtitle-container">
@@ -229,7 +254,7 @@
           </h2>
           <!-- Prices lists -->
           <div class="services-price-lists">
-            <ul class="services-price-list services-price-list-light">
+            <ul class="services-price-list services-price-list-1">
               <li class="services-price-list-item">
                 <span>Men's Haircut</span>
                 <span class="services-price-list-divider"></span>
@@ -251,7 +276,7 @@
                 <span>from 200 UAH</span>
               </li>
             </ul>
-            <ul class="services-price-list services-price-list-dark">
+            <ul class="services-price-list services-price-list-2">
               <li class="services-price-list-item">
                 <span>Trainee Haircut</span>
                 <span class="services-price-list-divider"></span>
@@ -303,7 +328,7 @@
               <p class="why-us-card-description">Gifts for Regular Customers</p>
             </li>
           </ul>
-          <div>
+          <div class="why-us-title-container">
             <!-- Subtitle -->
             <div class="subtitle-container">
               <svg width="60" height="1" class="divider-dark">
@@ -479,7 +504,7 @@
         <div class="contact-container">
           <!-- Book Service -->
           <section class="contact-book-service">
-            <h2 class="header header-light">Book a Service</h2>
+            <h2 class="header header-light contact-header">Book a Service</h2>
             <form action="" autocomplete="off" class="contact-form">
               <div class="contact-form-input-group">
                 <input
@@ -505,7 +530,7 @@
                 class="contact-form-elem contact-form-elem-textarea"
               ></textarea>
               <button
-                class="book-service-button book-service-button-light"
+                class="book-service-button book-service-button-light contact-submit-button"
                 type="submit"
               >
                 send
@@ -515,36 +540,38 @@
 
           <!-- Contacts -->
           <section id="contacts" class="contact">
-            <h2 class="header header-light">Contacts</h2>
-            <address>
-              <span class="contact-address">
-                <i class="contact-icon" data-feather="map-pin"></i>
-                Main Street, 7A Kyiv, 08132
-              </span>
-              <br />
-              <a class="contact-address" href="tel:+380441111111">
-                <i class="contact-icon" data-feather="phone"></i>
-                +38 044 111 11 11</a
-              ><br />
-              <a
-                class="contact-address contact-address-email"
-                href="mailto:barbershop@email.com"
-              >
-                <i class="contact-icon" data-feather="mail"></i
-                >barbershop@email.com</a
-              >
-            </address>
-            <div>
+            <h2 class="header header-light contact-header">Contacts</h2>
+            <div class="contacts-information-container">
+              <address>
+                <span class="contact-address">
+                  <i class="contact-icon" data-feather="map-pin"></i>
+                  Main Street, 7A Kyiv, 08132
+                </span>
+                <br />
+                <a class="contact-address" href="tel:+380441111111">
+                  <i class="contact-icon" data-feather="phone"></i>
+                  +38 044 111 11 11</a
+                ><br />
+                <a
+                  class="contact-address contact-address-email"
+                  href="mailto:barbershop@email.com"
+                >
+                  <i class="contact-icon" data-feather="mail"></i
+                  >barbershop@email.com</a
+                >
+              </address>
               <div>
-                <svg width="60" height="1" class="divider-light">
-                  <use href="./images/icons.svg#icon-divider" />
-                </svg>
-                <h3 class="subtitle subtitle-light">working hours</h3>
+                <div class="subtitle-container">
+                  <svg width="60" height="1" class="divider-light">
+                    <use href="./images/icons.svg#icon-divider" />
+                  </svg>
+                  <h3 class="subtitle subtitle-light">working hours</h3>
+                </div>
+                <p class="contact-working-hours">
+                  Daily from <time datetime="9:00AM">9:00 AM</time> till
+                  <time datetime="22:00PM">22:00 PM</time>
+                </p>
               </div>
-              <p class="contact-working-hours">
-                Daily from <time datetime="9:00AM">9:00 AM</time> till
-                <time datetime="22:00PM">22:00 PM</time>
-              </p>
             </div>
           </section>
         </div>

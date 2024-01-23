@@ -5,8 +5,8 @@
 
 .hero-sidebar {
     width: 155px;
-    padding: 32px 32px 40px 55px;
-    display: flex;
+    padding: 32px 32px 40px var(--padding-horizontal-global);
+    display: none;
     flex-direction: column;
     justify-content: space-between;
 }
@@ -44,7 +44,7 @@
 .hero-content-container {
     position: relative;
     z-index: 1;
-    padding: 40px 55px 40px 100px;
+    padding: 40px var(--padding-horizontal-global);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -65,15 +65,25 @@
     line-height: normal;
     letter-spacing: 1.1px;
 
+    width: 60px;
+
+    border: none;
+    padding: 0;
+
+    padding-bottom: 8px;
     cursor: pointer;
 }
 
 .hero-control-button-dark {
+    text-align: start;
     color: var(--gray-color);
+    border-bottom: 1px solid var(--gray-color);
 }
 
 .hero-control-button-light {
+    text-align: end;
     color: var(--white-color);
+    border-bottom: 1px solid var(--white-color);
 }
 
 .hero-social-media-element {
@@ -89,31 +99,6 @@
     transform: rotate(-90deg);
 }
 
-.hero-navbar {
-    display: flex;
-    align-items: center;
-}
-
-.hero-navbar-list {
-    display: flex;
-    gap: 40px;
-}
-
-.hero-header-cta {
-    display: flex;
-    gap: 40px;
-}
-
-.hero-header-address {
-    display: flex;
-    align-items: center;
-}
-
-.hero-header {
-    display: flex;
-    justify-content: space-between;
-}
-
 .hero-content> :nth-child(n + 2) {
     margin-top: 20px;
 }
@@ -121,7 +106,7 @@
 .hero-title {
     color: var(--white-color);
     font-family: var(--header-font-family);
-    font-size: 72px;
+    font-size: 48px;
     font-style: normal;
     line-height: normal;
     letter-spacing: 3.6px;
@@ -133,4 +118,106 @@
     font-style: normal;
     line-height: 166.667%;
     letter-spacing: 0.36px;
+}
+
+.hero-phone-logo {
+    fill: white;
+}
+
+.hero-navbar-menu-button {
+    margin-left: auto;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: block;
+}
+
+.hero-navbar-menu-button-light {
+    color: white;
+}
+
+.hero-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-header-address {
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (width < 1158px) {
+    .hero-navbar-list {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        margin-top: 30px;
+    }
+
+    .hero-header-cta {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        margin-top: 64px;
+    }
+
+    .hero-navbar-menu {
+        visibility: hidden;
+        position: fixed;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background-color: white;
+        padding: 48px var(--padding-horizontal-global) 0 40px;
+    }
+}
+
+.hero-book-service-button {
+    color: var(--black-color);
+}
+
+@media screen and (width >=768px) {
+    .hero-sidebar {
+        display: flex;
+    }
+
+    .hero-phone-logo {
+        display: none;
+    }
+}
+
+@media screen and (width >=1158px) {
+    .hero-title {
+        font-size: 72px;
+        letter-spacing: 3.6px;
+    }
+
+    .hero-navbar-menu-button {
+        display: none;
+    }
+
+    .hero-book-service-button {
+        color: white;
+    }
+
+    .hero-navbar {
+        display: flex;
+        align-items: center;
+    }
+
+    .hero-navbar-list {
+        display: flex;
+        gap: 40px;
+    }
+
+    .hero-header-cta {
+        display: flex;
+        gap: 40px;
+    }
+
+    .hero-navbar-menu {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
 }

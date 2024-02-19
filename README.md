@@ -1,1 +1,2 @@
-# go-it-barber-shop
+# BarberShop
+BarberShop project
